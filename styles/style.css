@@ -7,4 +7,95 @@ light blue: #1c5380
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: linear-gradient(#1c5380 10%, white); */
+  background-image: linear-gradient(0deg, white 65%, #1c5380 35%);
+  background-repeat: no-repeat;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: 100px auto;
+}
+
+section > div:nth-child(2) {
+  margin-left: 4px;
+  padding: 16px 48px;
+}
+
+section > div > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section > div > div:nth-child(1) button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 22%;
+  height: 32px;
+  padding: 24px 12px;
+  color: lightgray;
+  background-color: #1c5380;
+  border: 2px solid #06365f;
+  border-radius: 4px;
+  font-size: larger;
+}
+
+section > div> div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-left: -8px;
+  margin-right: -8px;
+  background-image: url('../images/frame.png');
+  padding: 12px 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1 {
+  color: #06365f;
+  font-size: 2.0rem;
+  line-height: 2.2rem;
+  margin: 24px 0 16px 0;
+}
+
+p {
+  line-height: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+section > div > div:nth-child(2) button {
+  color: lightgray;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+footer {
+  text-transform: uppercase;
+  color: #1c5380;
+  padding: 4px;
+  margin: 16px 0 16px 0;
+  font-weight: 800;
+  font-size: 14px;
+  width: 50%;
+}
+
+footer ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+footer ul li:last-child{
+  color: lightgray;
 }
